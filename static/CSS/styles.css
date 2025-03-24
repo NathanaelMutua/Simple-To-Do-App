@@ -52,3 +52,32 @@ h2{
     justify-content: center;
     margin-top: 20px;
 }
+
+.to_do{
+    background-color: black;
+    color: white;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 0px 10px;
+    margin-top: 10px;
+}
+
+.actions>form{
+    display: inline;
+}
+
+.actions>form>button{
+    background-color: red;
+    color: white;
+    font-size: 1.2em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
