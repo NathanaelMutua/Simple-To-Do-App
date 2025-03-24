@@ -28,7 +28,7 @@ def home():
     return render_template('index.html')
 
 @app.route("/checked/<int:to_do_id>", methods=['GET', 'POST'])
-def delete_to_do(to_do_id):
+def checked_to_do(to_do_id):
     for to_do in to_dos:
         if to_do['id'] == to_do_id:
             to_dos.remove(to_do)
@@ -41,5 +41,4 @@ def delete_to_do(to_do_id):
     for to_do in to_dos:
         if to_do['id'] == to_do_id:
             to_dos.remove(to_do)
-            break
     return redirect(url_for('home'))
