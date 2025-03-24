@@ -41,4 +41,5 @@ def delete_to_do(to_do_id):
     for to_do in to_dos:
         if to_do['id'] == to_do_id:
             to_dos.remove(to_do)
+            break
     return redirect(url_for('home'))
