@@ -35,7 +35,7 @@ def delete_to_do(to_do_id):
             break
     return redirect(url_for('home'))
 
-@app.route("/delete/<int:to_do_id>", methods=['GET', 'POST'])
+@app.route("/checked/<int:to_do_id>", methods=['GET', 'POST'])
 def delete_to_do(to_do_id):
     global to_dos
     for to_do in to_dos:
